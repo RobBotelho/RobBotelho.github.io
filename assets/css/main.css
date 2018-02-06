@@ -284,7 +284,6 @@
 }
  .\38 u, .\38 u\24 {
      width: 66.6666666667%;
-     clear: none;
      margin-left: 0;
 }
  .\37 u, .\37 u\24 {
@@ -1466,6 +1465,7 @@
 }
 /* Header */
  #header {
+    
      display: -moz-flex;
      display: -webkit-flex;
      display: -ms-flex;
@@ -1644,6 +1644,7 @@
  #main > section.one {
     /*here*/
      background-image: url('../../images/2017/Group-Photo-2017.jpg');
+     background-color:black;
      height:450px;
      
 }
@@ -1947,6 +1948,7 @@
 }
  .fa {
      cursor:pointer;
+
 }
  .fa:hover{
      color:white;
@@ -2469,7 +2471,20 @@ margin-right:auto;
     display:none;
     color: white;
     font-size: 17px;
-    background-color:#0000005c;
+    background-color:rgba(0, 0, 0, 0.38);
+    padding-left: 1%;
+}
+.otherSlides2{
+    position: absolute;
+    top: 7%;
+    left: 2%;
+    width: 20%;
+    height: 50px;
+    text-align: left;
+    display:none;
+    color: white;
+    font-size: 17px;
+    background-color:rgba(0, 0, 0, 0.38);
     padding-left: 1%;
 }
 .overlay{
@@ -2482,6 +2497,21 @@ margin-right:auto;
     background-color: #212529;
     opacity: 0.5;
 }
-.history img {
-    width:100%;
+.project-image a img{
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.ital{
+    font-style:italic;
+}
+.project-content-img{
+    width: 42%;
+    margin: 0 auto;
+    text-align: left;
+}
+.project-content-img h5{
+    color:black;
+    font-weight:900;
+}
+.project-content-img p{
+        font-size: 17px;
 }
