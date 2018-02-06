@@ -41,8 +41,8 @@
                      <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Home</span></a></li>
                      <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-flask">Research</span></a></li>
                      <li><a href="#publication" id="publication-link" class="skel-layers-ignoreHref"><span class="icon fa-file-text" >Publication</span></a></li>
-                     <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-users"  onmouseover="showOptionsMenu(this, 'Meet our 2018 Crew!')">Crew</span></a></li>
-                     <li><a href="#media" id="media-link" class="skel-layers-ignoreHref"><span class="icon fa-play"  onmouseover="showOptionsMenu(this, 'Check out our Data!')">Media & Results </span></a></li>
+                     <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-users"  onmouseover="showOptionsMenu(this, 'Meet our 2018 Crew!')" onmouseleave="hideOptionsMenu(this)">Crew</span></a></li>
+                     <li><a href="#media" id="media-link" class="skel-layers-ignoreHref"><span class="icon fa-play"  onmouseover="showOptionsMenu(this, 'Check out our Data!')" onmouseleave="hideOptionsMenu(this)">Some Other Media </span></a></li>
                   </ul>
                   <div class='twitter'>
                      <a class="twitter-timeline" data-height="350" data-chrome="noscrollbar nofooter noborders" data-theme="dark" data-link-color="#FAB81E" href="https://twitter.com/Botelho_Lab?ref_src=twsrc%5Etfw">Tweets by Botelho_Lab</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -51,9 +51,9 @@
             </div>
             <div class="bottom">
                <ul class="icons">
-                  <li><a style='color:white' href="mailto:rbotelho@ryerson.ca"  onmouseover="showOptionsMenu(this, 'Email Me')" class="icon fa-envelope" 
+                  <li><a style='color:white' href="mailto:rbotelho@ryerson.ca"  onmouseover="showOptionsMenu(this, 'Email Me')" onmouseleave="hideOptionsMenu(this)" class="icon fa-envelope" 
                      ><span class="label" >Email</span></a></li>
-                  <li><a target='_blank' onmouseover="showOptionsMenu(this, 'How to get to Ryerson')" style='color:white; font-size:20px;' href="https://www.google.ca/maps/place/Podium,+350+Victoria+St,+Toronto,+ON+M5B+2K3/@43.6582902,-79.3812141,259m/data=!3m2!1e3!5s0x882b34caadd1f035:0xaedd8fa23dac26e6!4m5!3m4!1s0x882b34caa90ddf77:0xdbf44fbeaec35a4!8m2!3d43.6582986!4d-79.3807846" class="fa fa-subway"><span class="label"></span></a></li>
+                  <li><a target='_blank' onmouseover="showOptionsMenu(this, 'How to get to Ryerson')" onmouseleave="hideOptionsMenu(this)" style='color:white; font-size:20px;' href="https://www.google.ca/maps/place/Podium,+350+Victoria+St,+Toronto,+ON+M5B+2K3/@43.6582902,-79.3812141,259m/data=!3m2!1e3!5s0x882b34caadd1f035:0xaedd8fa23dac26e6!4m5!3m4!1s0x882b34caa90ddf77:0xdbf44fbeaec35a4!8m2!3d43.6582986!4d-79.3807846" class="fa fa-subway"><span class="label"></span></a></li>
                  
                </ul>
             </div>
@@ -70,8 +70,11 @@
                <div class="container">
                   <header id='header0' class='mainHeader'>
                      <h2 id='header-1' style='letter-spacing:2px; font-size:3em; color:azure;z-index:99;font-weight:900; background-color:#0000003d'>Welcome to the  Botelho Lab! </h2>
-                     <h5 class='otherSlides' id='header-2'> Slide 2 is here </h5>
-                     <h5 class='otherSlides' id='header-3'> Slide 3 is here </h5>
+                     <h5 class='otherSlides' id='header-2'>  <strong style='font-size:20px'> Bacterial Fragmentation </strong> </h5>
+                     <h5 class='otherSlides2' id='header-3'> <strong style='font-size:20px'> Super resolution image of tubulating lysosomes in primary macrophages </strong> <br> Primary macrophages lysosomes labeled with fluorescent dextran
+and stimulated with LPS. Super resolution image rendered using SIM
+microscopy </h5>
+                     <h5 class='otherSlides' id='header-4'> </h5>
                   </header>
                   
               
@@ -81,6 +84,7 @@
                      <a id='circleOne'> <i class="fa fa-circle"></i> </a>
                      <a id='circleTwo'><i class="fa fa-circle-o"  ></i></a>
                      <a id='circleThree'><i class="fa fa-circle-o"></i></a>
+                     <a id='circleFour'><i class="fa fa-circle-o"></i></a>
                   </div>
                </div>
                 <!-- <h2 id='header1' style='font-size:0.8em; display:none; letter-spacing:2px; color:white;background-color: #00000087;'class="alt"> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,  </h2>
@@ -92,21 +96,24 @@
                      The Botelho Lab @ <a class='links' target="_blank"  href='https://www.ryerson.ca/'> Ryerson University </a> in <a  class='links' target="_blank"  href='https://en.wikipedia.org/wiki/Toronto'>Toronto</a>, Canada studies the molecular mechanisms that help establish, maintain and change organelle identity and function.  Since organelles underpin everythinga that cells do, then understanding how organelles are made and function is essential to comprehend the fundamentals that drive life, health and disease-states.  You are invited to explore and learn about our work and our energetic, fun group. Please contact <a href="mailto:rbotelho@ryerson.ca"> Dr. Roberto Botelho </a> if interested in graduate or post-doctoral studies.
                   </p>
                   <footer>
-                  <button id='big' class='motive'>
+                  <button id='big' class='motive' onmouseover="showOptionsMenu(this, 'Overview of what we do in our Lab')" onmouseleave="hideOptionsMenu(this)" >
                      <h3 class='pulse' style='color:black'>  The <span style=' font-weight:900'> Big</span>  Picture </h3>
                   </button>
                   </footter>
-                  <div class='topic-content' style="background-color:#f9f9f9">
+                  <div class='topic-content' style="background-color:rgb(240, 255, 255);">
                      
                      <h2 style='margin-bottom: 10%; color:black'> <strong> Laboratory on Organelle Identity and Function </strong> </h2>
-                     <p> We want to learn how cells build, maintain and change their organelles and what these structures do.
-                        Why does this matter?  Organelles are the “organs” of the cell.  In a very broad sense, organelles
+
+                     <p> We want to learn how cells build, maintain and change their organelles and what these structures do. Why does this matter?  Organelles are the “organs” of the cell.  In a  very broad sense, organelles
                         compartmentalize and organize myriad biochemical reactions that underpin cell survival and
-                        health.  Thus, when organelles malfunction, cells become “sick”. This ultimately manifests itself
+                        health.  Thus, when organelles malfunction, cells become “sick”. This ultimately manifests itself
                         as diseases such as hereditary conditions like Niemann-Pick Disease, infectious diseases like
                         tuberculosis, and can even help turn our cells against our own bodies resulting in cancer or auto-
-                        immunity.  Thus, by better understanding organelle identity processes, we hope to discover new
-                        ways to improve diagnostics and/or therapies to treat diseases.
+                        immunity.  Thus, by better understanding organelle identity processes, we hope to discover new
+                        ways to improve diagnostics and/or therapies to treat diseases. </p>
+
+
+                        <p>
                         This is a big topic! So, our lab has developed a “soft spot” for specific organelles… the cool
                         ones, that is: lysosomes and phagosomes. Lysosomes are ubiquitous organelles that encase a
                         host of degradative enzymes and an acidic environment. Thus, they are often best known for
@@ -116,7 +123,8 @@
                         centre for cells, informing them of their metabolic state (are they hungry, full?), stress (are there
                         bugs, damage), and can even signal to make more of themselves or change their shape (hmm.. do
                         garbage cans change and adapt?). So, our lab looks at how cells regulate lysosome function and
-                        their properties, especially in macrophages and dendritic cells, which are innate immune cells.
+                        their properties, especially in macrophages and dendritic cells, which are innate immune cells. </p>
+                        <p>
                         Macrophages and dendritic cells are talented cells that do many, many things. But we again
                         work on the “cool things”: phagocytosis and phagosomes. These cells are known as professional
                         phagocytes because they recognize and engulf particles like bacteria, fungi and even dead host
@@ -127,11 +135,12 @@
                         naughty bug. But, there’s a bug in this whole process (pun intended). Bacteria like Salmonella,
                         Mycobacteria and Legionella (among many others) can disrupt phagosome maturation to survive
                         within cells. So, phagosomes make for awesome organelles to study organelle biogenesis and
-                        identity.
+                        identity. </p>
+                        <p>
                         Overall, our lab wants to answer questions like these: What makes the lysosome a lysosome? 
                         How did a lysosome become a lysosome?  How does a lysosome stay as a lysosome?  How and
                         for what purpose might a lysosome change? How can phagosomes fuse with lysosomes? How
-                        do pathogenic bacteria like Salmonella manipulate phagosome maturation? And so forth….
+                        do pathogenic bacteria like Salmonella manipulate phagosome maturation? And so forth…. </p>
                      </p>
                   </div>
                </div>
@@ -142,55 +151,88 @@
                   <header>
                      <h2 style='color:black'>SELECT RESEARCH PROJECTS</h2>
                   </header>
-                  <div class='topic'>
-                     <img class='topic-img' src='images/Bacteria-fragmentation.png'>
-                     <h3 >   Lysosome remodelling during immune cell challenge </h3>
+                  <div class='topic' >
+                    <a data-fancybox="gallery" href="images/data/Tubulating-Dendritic-cell-A.jpg" data-caption="Tubulating Dendritic cell A and B : Dendritic cells lysosomes labeled with fluorescent dextran, stimulated with LPS" style='border-bottom:none'>
+                           <img class='topic-img'  src="images/data/Tubulating-Dendritic-cell-A.jpg" onmouseover="showImageMenu(this, 'Click Me')" onmouseleave="hideOptionsMenu(this)">
+                     </a>
+                     <h3 >  1. Lysosome remodelling during immune cell challenge </h3>
                   </div>
-                  <div class='topic-content'>
-                     
+                  <div class='topic-content' >
+                     <div class="project-image" >
+                           <a data-fancybox="gallery" href="images/data/MPLA_25_ngmL.jpg" data-caption="MPLA_25_ngmL" style='border-bottom:none'>
+                           <img  src="images/data/MPLA_25_ngmL.jpg" onmouseover="showImageMenu(this, 'Click Me')" onmouseleave="hideOptionsMenu(this)" style='width:50%'>
+                           </a>
+                          
+                     </div>
+                    <div class='content-left' >
                      <p> Immune cells like macrophages and dendritic cells have lysosomes that look punctate
                         under the fluorescence microscope.  However, once these cells are activated by exposure
                         to bacterial products or cytokines, these lysosomes change! For one thing, we showed
                         that phagocytosis of bacteria enhances expression of lysosomal proteins to enhance
-                        lysosomal activity, making <a href='https://www.ncbi.nlm.nih.gov/pubmed/27397893' target='_blank'>macrophages better killers </a>. In other words, phagocytosis trains
+                        lysosomal activity, making <a href='https://www.ncbi.nlm.nih.gov/pubmed/27397893' target='_blank' onmouseover="showPublication(this, 'Publication')" onmouseleave="hideOptionsMenu(this)">macrophages better killers </a>. In other words, phagocytosis trains
                         macrophages to be better killers. For another, lysosomes are transformed from many
-                        vesicular structures to a <a href='https://www.ncbi.nlm.nih.gov/pubmed/26582390' target='_blank'> highly tubular network </a>.  Though lysosome
+                        vesicular structures to a <a href='https://www.ncbi.nlm.nih.gov/pubmed/26582390' target='_blank' onmouseover="showPublication(this, 'Publication')" onmouseleave="hideOptionsMenu(this)"> highly tubular network </a>.  Though lysosome
                         tubulation may play roles in retaining and processing antigens, this remain poorly
                         understood both in mechanism and in function. We have recently published a review in
-                        <a href='https://www.ncbi.nlm.nih.gov/pubmed/29089378' target='_blank'> Cellular Microbiology </a>  that summarizes lysosome remodeling
+                        <a href='https://www.ncbi.nlm.nih.gov/pubmed/29089378' target='_blank' onmouseover="showPublication(this, 'Publication')" onmouseleave="hideOptionsMenu(this)"> Cellular Microbiology </a>  that summarizes lysosome remodeling
                         and adaptation in immunity.
+                         
                      </p>
                   </div>
+                     
+
+                  </div>
                   <div class='topic'>
-                     <img class='topic-img' src='images/Bacteria-fragmentation.png'>
-                     <h3>   Phagocytosis and phagosome maturation </h3>
+                    
+
+                     <a data-fancybox="gallery" href="images/data/Bacteria-fragmentation.png" data-caption="Bacteria Fragmentation" style='border-bottom:none'>
+                           <img class='topic-img'  src="images/data/Bacteria-fragmentation.png" onmouseover="showImageMenu(this, 'Click Me')" onmouseleave="hideOptionsMenu(this)">
+                     </a>
+                     <h3>  2. Phagocytosis and phagosome maturation </h3>
                   </div>
                   <div class='topic-content'>
-                     
+                  
+                     <video  style='width:45%' controls>
+                        <source src="images/video/RAW-2FYVE-GFP-phagocytosing-legionella-filament.mov" type="video/mp4" style='width:100%'>
+
+                     </video> 
+                     <div class="project-content-img" >
+                           <h5>RAW 2FYVE GFP phagocytosing legionella filament </h2>
+                           <p class='ital'>  Raw macrophage expressing 2FYVE-GFP (white) internalizing legionella filament (RFP). 2FYVE localizes to regions of filament just internalized, and is devoid in most distal regions of filament.</p>
+                     </div>
+
+
                      <p> Macrophages, neutrophils and dendritic cells are immune cells that hunt down and engulf
                         pathogens with their plasma membrane in a process called phagocytosis.  After
                         engulfment, the pathogen is sequestered in a new membrane-bound organelle called the
                         phagosome.  Importantly, the phagosome is then converted into a phagolysosome, a
                         process known as phagosome maturation.  This transformation changes the phagosome
-                        from an innocuous organelle to a <a href='https://www.ncbi.nlm.nih.gov/pubmed/27815869' target='_blank'> very acidic and hydrolytic organelle that kills and
+                        from an innocuous organelle to a <a href='https://www.ncbi.nlm.nih.gov/pubmed/27815869' target='_blank' onmouseover="showPublication(this, 'Publication')" onmouseleave="hideOptionsMenu(this)"> very acidic and hydrolytic organelle that kills and
                         digests the pathogen </a>. Studying this system has two great
                         advantages.  First, this is a critically important process in the immune arsenal against
                         pathogens – and one that can be hijacked by bugs like Salmonella and Mycobacterium. 
                         Second, the phagosome is a beautiful system to study organelle identity processes
                         because we can track an organelle from birth (phagocytosis) to death (phagosome
                         resolution) and study the changes in its identity over many hours. Currently, we are
-                        exploring how phosphoinositides regulate <a href='https://www.ncbi.nlm.nih.gov/pubmed/28779020' target='_blank'> phagosome maturation </a>, how cells adapt to <a href='https://www.ncbi.nlm.nih.gov/pubmed/27397893' target='_blank'> phagocytosis
+                        exploring how phosphoinositides regulate <a href='https://www.ncbi.nlm.nih.gov/pubmed/28779020' target='_blank' onmouseover="showPublication(this, 'Publication')" onmouseleave="hideOptionsMenu(this)"> phagosome maturation </a>, how cells adapt to <a href='https://www.ncbi.nlm.nih.gov/pubmed/27397893' target='_blank' onmouseover="showPublication(this, 'Publication')" onmouseleave="hideOptionsMenu(this)"> phagocytosis
                         </a> and how
-                        macrophage handle challenging particles like <a href='https://www.ncbi.nlm.nih.gov/pubmed/29089378' target='_blank'> filamentous Legionella </a> Not yet published, we are also investigating
+                        macrophage handle challenging particles like <a href='https://www.ncbi.nlm.nih.gov/pubmed/29089378' target='_blank' onmouseover="showPublication(this, 'Publication')" onmouseleave="hideOptionsMenu(this)"> filamentous Legionella </a> Not yet published, we are also investigating
                         what the heck happens to phagosomes after bacteria are digested!
                      </p>
                   </div>
                   <div class='topic'>
-                     <img class='topic-img' src='images/Bacteria-fragmentation.png'>
-                     <h3>   Phosphatidylinositol-3,5- bisphosphate function and regulation </h3>
+                    
+
+                      <a data-fancybox="gallery" href="images/data/Localization-of-TgPH12X(tandem)and-TgPH1,fluorescent-biosensors-for-PI(3)P-in-RA- macrophages-pre-treated-with-Dextran(red).png" data-caption="Localization of TgPH12X(tandem) and TgPH1, fluorescent biosensors for PI(3)P in RAW macrophages pre-treated with Dextran(red)" style='border-bottom:none'>
+                           <img class='topic-img' style='height:150px'  src="images/data/Localization-of-TgPH12X(tandem)and-TgPH1,fluorescent-biosensors-for-PI(3)P-in-RA- macrophages-pre-treated-with-Dextran(red).png" onmouseover="showImageMenu(this, 'Click Me')" onmouseleave="hideOptionsMenu(this)">
+                     </a>
+
+                     <h3>  3. Phosphatidylinositol-3,5- bisphosphate function and regulation </h3>
                   </div>
                   <div class='topic-content'>
-                     
+                      <a data-fancybox="gallery" href="images/data/GFP2xTgPH1_apilimod-dextranandGFPcomposite.jpg" data-caption="" style='border-bottom:none'>
+                           <img class='topic-img'  src="images/data/GFP2xTgPH1_apilimod-dextranandGFPcomposite.jpg" onmouseover="showImageMenu(this, 'Click Me')" onmouseleave="hideOptionsMenu(this)" style='width:50%'>
+                     </a>
                      <p> We are spending buckets of time trying to better understand the regulation and function
                         of phosphatidylinositol-3,5- bisphosphate [PtdIns(3,5)P2], a phosphoinositide that
                         controls properties of lysosomes and the yeast vacuole.  Lysosomes and the yeast vacuole
@@ -200,16 +242,20 @@
                         PtdIns(3,5)P2, the lysosomes become massively swollen, autophagic (link) flux is
                         impaired, phagosome maturation is arrested, even neutrophil chemotaxis is blunted,
                         organisms fail to develop properly, and develop neurological problems, or massive
-                        inflammation, etc. So, it kind of matters. For recent work on this see <a href='https://www.ncbi.nlm.nih.gov/pubmed/25713145' target='_blank;'> here </a> . We are now trying to understand
+                        inflammation, etc. So, it kind of matters. For recent work on this see <a href='https://www.ncbi.nlm.nih.gov/pubmed/25713145' target='_blank;' onmouseover="showPublication(this, 'Publication')" onmouseleave="hideOptionsMenu(this)"> here </a> . We are now trying to understand
                         why lysosomes become massively enlarged and how this lipid coordinates with
                         transcription factors to modulate lysosome biogenesis.
                      </p>
                   </div>
                   <div class='topic'>
-                     <video class='topic-img' controls>
+                     <!-- <video class='topic-img' controls>
                         <source src="images/video/Supplemental-Movie-5-sweptfield-DMSO.mp4" type="video/mp4">
-                     </video>
-                     <h3>   What about the fatty acid tails of phosphoinositides? </h3>
+                     </video> -->
+                     <a data-fancybox="gallery" href="images/data/resting.jpg" data-caption="Resting_15_w1TIRF RFP" style='border-bottom:none'>
+                           <img class='topic-img'  src="images/data/resting.jpg" onmouseover="showImageMenu(this, 'Click Me')" onmouseleave="hideOptionsMenu(this)">
+                     </a>
+                   
+                     <h3>  4. What about the fatty acid tails of phosphoinositides? </h3>
                   </div>
                   <div class='topic-content'>
                      
@@ -222,7 +268,7 @@
                         PtdIns(3,5)P2, the lysosomes become massively swollen, autophagic (link) flux is
                         impaired, phagosome maturation is arrested, even neutrophil chemotaxis is blunted,
                         organisms fail to develop properly, and develop neurological problems, or massive
-                        inflammation, etc. So, it kind of matters. For recent work on this see <a href='https://www.ncbi.nlm.nih.gov/pubmed/25713145' target='_blank'> here </a>. We are now trying to understand
+                        inflammation, etc. So, it kind of matters. For recent work on this see <a href='https://www.ncbi.nlm.nih.gov/pubmed/25713145' target='_blank' onmouseover="showPublication(this, 'Publication')" onmouseleave="hideOptionsMenu(this)"> here </a>. We are now trying to understand
                         why lysosomes become massively enlarged and how this lipid coordinates with
                         transcription factors to modulate lysosome biogenesis.
                      </p>
@@ -519,10 +565,12 @@
                      </div>
                      <div id="2014" class="tabcontent">
                         <a data-fancybox="gallery" href="images/2014/IMG_7532_silly group.jpg" data-caption="2014 Group"><img  src="images/2014/IMG_7532_silly group.jpg"></a>
+
                         <a data-fancybox="gallery" href="images/2015/Christmas 2015.jpg" data-caption="2015 Christmas"><img  src="images/2015/Christmas 2015.jpg"></a>
                         <a data-fancybox="gallery" href="images/2015/Group 2015.jpg" data-caption="2015 Group"><img  src="images/2015/Group 2015.jpg"></a>
                         <a data-fancybox="gallery" href="images/2016/Monica Victoria and Christian wine tasting.JPG" data-caption="Monica, Victoria and Christian Wine Tasting"><img  src="images/2016/Monica Victoria and Christian wine tasting.JPG"></a>
                         <a data-fancybox="gallery" href="images/2016/Horse back riding.JPG" data-caption="Horse back Riding"><img  src="images/2016/Horse back riding.JPG"></a>
+                        <a data-fancybox="gallery" href="images/2016/Picnic.jpg" data-caption=Picnic><img  src="images/2016/Picnic.jpg"></a>
                         <a data-fancybox="gallery" href="images/2016/Monica and Christian.JPG" data-caption="Monica and Christians"><img  src="images/2016/Monica and Christian.JPG"></a>
                         <a data-fancybox="gallery" href="images/2016/Ryerson MaRS July 2016/20160713_104915.jpg" data-caption="Ryerson MaRs"><img  src="images/2016/Ryerson MaRS July 2016/20160713_104915.jpg"></a>
                         <a data-fancybox="gallery" href="images/2016/Ryerson MaRS July 2016/20160713_104046.jpg" data-caption="Ryerson MaRs First look"><img  src="images/2016/Ryerson MaRS July 2016/20160713_104046.jpg"></a>
@@ -829,37 +877,82 @@
                   </div>
                   <div class='topic-content'>
                      <div class="history">
-                           <a data-fancybox="gallery" href="images/history/history1.jpg" data-caption="Bacteria-fragmentation!">
-                           <img  src="images/history/history1.jpg">
+                           <a data-fancybox="gallery" href="images/history/history1.jpg" data-caption="Bacteria-fragmentation!" >
+                           <img  src="images/history/history1.jpg" style='width:100%' onmouseover="showOptionsMenu(this, 'Click to Zoom!')" onmouseleave="hideOptionsMenu(this)" >
                            </a>
                            <a data-fancybox="gallery" href="images/history/history2.jpg" data-caption="Bacteria-fragmentation">
-                           <img  src="images/history/history2.jpg">
+                           <img  src="images/history/history2.jpg" style='width:100%' onmouseover="showOptionsMenu(this, 'Click to Zoom!')" onmouseleave="hideOptionsMenu(this)" >
                           </a>
                      </div>
                      
-                     </a>
+      
                   </div>
+                  <div class='crew-topic'>
+                     <h3>  Honorary Lab Members </h3>
+                  </div>
+                  <div class='topic-content' style='position:relative; padding:2%'>
+                     
+                     <div class='portfolio'>
+                        <div class='portfolio-content-wrapper'>
+                           <i class="fa fa-chevron-circle-down" style='text-align:center; color:black' aria-hidden="true"></i>
+                           <div class='portfolio-content'>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="column">
+                           <div class="card">
+                              <div class='individual'>
+                                 <img src='images/individual/Anna.jpg' alt="Monica Dayam">
+                              </div>
+                              <div class="containers">
+                                 <p><button class="button" id='Anna-Botelho'>  Anna Botelho </button></p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="column">
+                           <div class="card">
+                              <div class='individual'>
+                                 <img src='images/individual/Ava_Pic.jpg' alt="Ava">
+                              </div>
+                              <div class="containers">
+                                 <p><button class="button" id='Ava-Botelho'>  Ava Botelho </button></p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
                </div>
             </section>
             <!-- Contact -->
             <section id="media" class="five" style='background-color:white'/>
                <div class="container">
                   <header >
-                     <h2 style='color:black'>MEDIA & RESULTS </h2>
+                     <h2 style='color:black'> SOME OTHER MEDIA  </h2>
                   </header>
                   <div class="tab">
-                     <button  class="tablinks" onclick="openCity(event, '2009-Media')"> 2009 - 2014 Results </button>
-                     <button class="tablinks" onclick="openCity(event, '2014-Media')">2014 - 2018 Results </button>
+                     <button  class="tablinks" onclick="openCity(event, '2009-Media')"> Images </button>
+                     <button class="tablinks" onclick="openCity(event, '2014-Media')">Videos </button>
                   </div>
                   <div id="2009-Media" class="tabcontent">
-                     <a data-fancybox="gallery" href="images/individual/Bacteria-fragmentation.png" data-caption="Bacteria-fragmentation!">
-                     <img  src="images/individual/Bacteria-fragmentation.png">
+                     <a data-fancybox="gallery" href="images/data/Tubulating Dendritic cell B.jpg" data-caption="Tubulating Dendritic cell B">
+                     <img  src="images/data/Tubulating Dendritic cell B.jpg">
                      </a>
+                     <a data-fancybox="gallery" href="images/data/MPLA_25_ngmL.jpg" data-caption="MPLA_25_ngmL">
+                     <img  src="images/data/MPLA_25_ngmL.jpg">
+                     </a>
+                      <a data-fancybox="gallery" href="images/data/Monophosphoryl lipid A stimulated Dendritic Cell 2.jpg" data-caption="Monophosphoryl lipid A stimulated Dendritic Cell">
+                     <img  src="images/data/Monophosphoryl lipid A stimulated Dendritic Cell 2.jpg">
+                     </a>
+
                   </div>
                   <div id="2014-Media" class="tabcontent">
-                     <a data-fancybox="gallery" href="images/individual/Bacteria-fragmentation.png" data-caption="Bacteria-fragmentation">
-                     <img  src="images/individual/Bacteria-fragmentation.png">
-                     </a>
+                    
+                      <video  style='width:45%' controls>
+                        <source src="images/video/supplemental.mp4" style='width:100%'>
+                     </video> 
+                    
                   </div>
                </div>
             </section>
