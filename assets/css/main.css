@@ -1900,6 +1900,17 @@
      #main section.cover {
          padding: 4em 0;
     }
+    .otherSlides {
+        font-size:7px !important;
+    }
+    .otherSlides2{
+        font-size:7px !important;
+        
+    }
+    .slideHeader{
+        font-size:10px !important;
+    }
+    }
 }
 /* Mobile */
  @media screen and (max-width: 736px) {
@@ -2013,6 +2024,7 @@
 }
  .topic-content p{
      color:black;
+     margin-top:5%;
      margin-bottom:5%;
      text-align:left;
 }
@@ -2113,6 +2125,9 @@
     }
      .tabcontent a img {
          width:100% !important;
+    }
+    #header0, #header-1{
+        display:none;
     }
 }
  .container {
@@ -2462,9 +2477,9 @@ margin-right:auto;
   
 }
 .otherSlides{
-        position: absolute;
-    bottom: 5%;
-    right: 0;
+    position: absolute;
+    top: 7%;
+    right: 2%;
     width: 20%;
     height: 50px;
     text-align: left;
@@ -2514,4 +2529,7 @@ margin-right:auto;
 }
 .project-content-img p{
         font-size: 17px;
+}
+.slideHeader{
+    font-size:20px;
 }
