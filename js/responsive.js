@@ -30,4 +30,8 @@
                $('.button').click(function() {
                    $('.portfolio').slideDown();
                });
-           
+               $('.fa-chevron-circle-down').click(function() {
+                   $("body").css("overflow", "scroll");
+
+                   $('.portfolio').slideUp();
+               });
