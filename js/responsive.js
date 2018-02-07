@@ -11,17 +11,16 @@
 
                    } else {
                        $(this).next().slideDown();
-                       setTimeout(function() {
+                      /* setTimeout(function() {
                            $('html,body').animate({
                                    scrollTop: Top.offset().top
                                },
                                250);
-                       }, 300)
+                       }, 300) */
                    }
 
                    $('.topic, .crew-topic, .motive').not(this).each(function() {
                        $(this).next().slideUp();
-
                    });
 
 
@@ -31,8 +30,4 @@
                $('.button').click(function() {
                    $('.portfolio').slideDown();
                });
-               $('.fa-chevron-circle-down').click(function() {
-                   $("body").css("overflow", "scroll");
-
-                   $('.portfolio').slideUp();
-               });
+           
