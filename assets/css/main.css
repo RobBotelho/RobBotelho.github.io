@@ -2129,6 +2129,16 @@
     #header0, #header-1{
         display:none;
     }
+    .project-image img{
+        width:100% !important;
+    }
+    video{
+        width:100% !important;
+    }
+    .project-content-img{
+        width:100% !important;
+    }
+
 }
  .container {
      padding: 0 50px;
@@ -2522,6 +2532,7 @@ margin-right:auto;
     width: 42%;
     margin: 0 auto;
     text-align: left;
+
 }
 .project-content-img h5{
     color:black;
@@ -2529,6 +2540,8 @@ margin-right:auto;
 }
 .project-content-img p{
         font-size: 17px;
+        font-weight:900;
+        color:grey;
 }
 .slideHeader{
     font-size:20px;
