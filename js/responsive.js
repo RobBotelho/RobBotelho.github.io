@@ -19,12 +19,12 @@
                  $(this).next().slideDown();
 
              }
-             setTimeout(function() {
+          /*   setTimeout(function() {
                  $('.topic, .crew-topic, .motive').not(ThisRef).each(function() {
-                     $(this).next().fadeOut();
+                     $(this).next().slideUp();
                  });
-             }, 310);
-
+             }, 1000);
+ */
 
 
 
