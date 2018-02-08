@@ -21,7 +21,7 @@
              }
              setTimeout(function() {
                  $('.topic, .crew-topic, .motive').not(ThisRef).each(function() {
-                     $(this).next().slideUp();
+                     $(this).next().fadeOut();
                  });
              }, 310);
 
