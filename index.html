@@ -1,11 +1,12 @@
 <!DOCTYPE HTML>
 <html>
    <head>
-      <title>The Botelho Lab </title>
+      <title> Bolteho Lab </title>
+      <meta name="description" content="The Botelho Lab @ Ryerson University in Toronto studies the molecular mechanisms that establish, maintain or adapt organelle identity and function. Organelles underpin everything that cells perform. Thus, understanding how organelles are made and function is essential to comprehend the underpinnings that drive life, health and disease- states. You are invited to explore and learn about our work and our energetic group. Please contact Dr. Roberto Botelho if interested in graduate or post-doctoral studies.">
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-      <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+   
       <script src="assets/js/customize-twitter-1.1.js" type="text/javascript"></script>
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link rel="stylesheet" href="assets/css/main.css" />
@@ -303,9 +304,7 @@ decrease as zymosan particles acidify.
                <div class="container">
                   <header>
                      <h2 style='color:black'>SELECT PUBLICATION</h2>
-                     <p>For a full list of publications please refer to <a href='http://scholar.google.ca/citations?user=A3dzTagAAAAJ&amp;hl=en
-                        https://orcid.org/0000-0002- 7820-0999' target='_blank'> GOOGLE SCHOLAR </a> or <a href='http://scholar.google.ca/citations?user=A3dzTagAAAAJ&amp;hl=en
-                        https://orcid.org/0000-0002- 7820-0999' target='_blank'> ORCID </a> </p>
+                     <p>For a full list of publications please refer to <a href='http://scholar.google.ca/citations?user=A3dzTagAAAAJ&amp;hl=en' target='_blank'> GOOGLE SCHOLAR </a> or <a href='https://orcid.org/0000-0002- 7820-0999' target='_blank'> ORCID </a> </p>
                   </header>
                   <div class='publication-container'>
                      <div class='paper-img-title-container'>
@@ -946,11 +945,12 @@ decrease as zymosan particles acidify.
                   <header >
                      <h2 style='color:black'> SOME OTHER MEDIA  </h2>
                   </header>
-                  <div class="tab">
-                     <button  class="tablinks" onclick="openCity(event, '2009-Media')"> Images </button>
-                     <button class="tablinks" onclick="openCity(event, '2014-Media')">Videos </button>
+                  <div class="tab" style='margin:0 auto'>
+                     <button  class="tablinks" onclick="openCity(event, 'media-images')"> Images </button>
+                     <button class="tablinks" onclick="openCity(event, 'media-video')">Videos </button>
+                     <button class="tablinks" onclick="openCity(event, 'media-poster')">Posters</button>
                   </div>
-                  <div id="2009-Media" class="tabcontent">
+                  <div id="media-images" class="tabcontent">
                      <h3 style='font-weight:900; margin:5% 0; color:black'> Dendritic cells undergoing lysosome tubulation </h3>
                      <a data-fancybox="gallery" href="images/data/Tubulating Dendritic cell B.jpg" data-caption="Tubulating Dendritic cell B">
                      <img  src="images/data/Tubulating Dendritic cell B.jpg">
@@ -962,7 +962,7 @@ decrease as zymosan particles acidify.
                      <img  src="images/data/Monophosphoryl lipid A stimulated Dendritic Cell 2.jpg">
                      </a>
                   </div>
-                  <div id="2014-Media" class="tabcontent">
+                  <div id="media-video" class="tabcontent">
                      <video  style='width:45%; margin-top:5%' controls>
                         <source src="images/video/supplemental.mp4" style='width:100%'>
                      </video>
@@ -972,6 +972,12 @@ decrease as zymosan particles acidify.
                            U. Pittsburgh) 
                         </h5>
                      </div>
+                  </div>
+                  <div id="media-poster" class="tabcontent">
+                     <a data-fancybox="gallery" href="images/posters/vic.jpg">
+                     <img  src="images/posters/Vic.jpg" style='margin-top:100px'>
+                     </a>
+                     
                   </div>
                </div>
             </section>
@@ -984,6 +990,13 @@ decrease as zymosan particles acidify.
             </ul>
          </div>
          <!-- Scripts -->
+         </script>
+         
+         <script>
+            $("[data-fancybox]").fancybox({
+                 clickContent    : false
+               });
+
          </script>
          <script src="assets/js/jquery.min.js"></script>
          <script src='js/HiddenInfo.js'> </script>
