@@ -11,11 +11,14 @@
 
              } else {
 
-                 $('html,body').animate({
+
+// this is to scroll down each topic content
+           /*      
+           $('html,body').animate({
                          scrollTop: Top.offset().top
                      },
                      300);
-
+*/
                  $(this).next().slideDown();
 
              }
