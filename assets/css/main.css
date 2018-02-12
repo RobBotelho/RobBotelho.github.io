@@ -1197,7 +1197,7 @@
 }
  h3 {
     color:black;
-     font-size: 1.5em;
+     font-size: 1em;
 }
 
  header > p {
@@ -1415,7 +1415,8 @@
      display: inline-block;
      color: black;
      text-decoration: none;
-     padding: 0.75em 2.5em 0.75em 2.5em;
+     padding: 5px 10px;
+    border-radius: 1px;
      background-color: rgba(40, 185, 181, 1);
      border: 0;
      cursor: pointer;
@@ -1643,7 +1644,7 @@
 }
  #main > section.one {
     /*here*/
-     background-image: url('../../images/2017/Group-Photo-2017.jpg');
+     
      background-color:black;
      height:450px;
      
@@ -2266,8 +2267,8 @@
 }
  header h2{
      letter-spacing:1px;
-         font-weight: 400;
-
+     margin-bottom:50px;
+         
 }
  #publication .container h3{
      font-size: 1.3em;
@@ -2297,7 +2298,7 @@
     
      padding: 17px 50px;
      
-     font-size: 30px;
+     
      font-family: 'Source Sans Pro', sans-serif;
 }
 /* Change background color of buttons on hover */
@@ -2511,7 +2512,7 @@ margin-right:auto;
     width: 20%;
     height: 50px;
     text-align: left;
-    display:none;
+    
     color: white;
     font-size: 17px;
     background-color:rgba(0, 0, 0, 0.38);
@@ -2524,7 +2525,7 @@ margin-right:auto;
     width: 20%;
     height: 50px;
     text-align: left;
-    display:none;
+
     color: white;
     font-size: 17px;
     background-color:rgba(0, 0, 0, 0.38);
@@ -2532,13 +2533,20 @@ margin-right:auto;
 }
 .overlay{
     position: absolute;
+        background-size: cover;
+
+    background-position: center;
+    display:none;
     top: 0;
-    left: 0;
-    z-index:-1;
-    height: 100%;
+    z-index:1;
+    
+    height: 450px;
     width: 100%;
     background-color: #212529;
-    opacity: 0.5;
+    
+}
+.active{
+    display:block;
 }
 .project-image a img{
       box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -2563,4 +2571,12 @@ margin-right:auto;
 }
 .slideHeader{
     font-size:20px;
+}
+.navigation-slider{
+    position: absolute;
+    bottom: 10px;
+    color: azure;
+    margin: 0 auto;
+    z-index: 99;
+    width: 100%;
 }
