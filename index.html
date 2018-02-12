@@ -58,11 +58,48 @@
             <!-- Intro -->
             <section id="top" style='position:relative' class="one dark cover">
                <!-- this is where the img went -->
-               <div class='overlay'>
+               <div class='navigation-slider'>
+                 <i class="fa fa-backward"></i>
+                  <i id='player' class="fa fa-pause" style='padding:1%'></i>
+                  <i class="fa fa-forward"></i>
                </div>
-               <div class='fade'>
+               
+               <div class='overlay active' id='slide0' style='background-image:url(images/2017/Group-Photo-2017.jpg)' >
+                  <div class='container'>
+                  <header id='header0' class='mainHeader'>
+                     <h2 id='header-1' style='letter-spacing:2px; font-size:3em; color:azure;z-index:99;font-weight:900; margin-top:100px;background: rgba(0, 0, 0, 0.4)'>Welcome to the  Botelho Lab! </h2>
+                  </header>
+                  </div>
                </div>
-               <div class="container">
+               <div class='overlay' id='slide1' style='background-image:url(images/data/Bacteria-fragmentation.png)' >
+                  <div class='container'>
+                  <header id='header0' class='mainHeader'>
+                     <h5 class='otherSlides' id='header-2'>  <strong class='slideHeader'> Bacterial Fragmentation </strong> <br> Bacterial contents in fragmented phagosomes after 6 h of phagocytosis </h5>
+                  </header>
+                  </div>
+               </div>
+               <div class='overlay' id='slide2' style='background-image:url(images/data/super.jpg)' >
+                  <div class='container'>
+                  <header id='header0' class='mainHeader'>
+                      <h5 class='otherSlides2' id='header-3'> <strong class='slideHeader'> Super resolution image of tubulating lysosomes in primary macrophages </strong> <br> Primary macrophages lysosomes labeled with fluorescent dextran
+                        and stimulated with LPS. Super resolution image rendered using SIM
+                        microscopy 
+                     </h5>
+                  </header>
+                  </div>
+               </div>
+                <div class='overlay' id='slide3' style='background-image:url(images/data/merge-epi.jpg)' >
+                  <div class='container'>
+                  <header id='header0' class='mainHeader'>
+                     <h5 class='otherSlides' id='header-4'> <strong class='slideHeader'> Macrophages engulfed antibody-coated beads and stained
+                        for nucleus (blue), transcription factor EB (green) and actin (red).  </strong> 
+                     </h5>
+                  </header>
+                  </div>
+               </div>
+            <!--    <div class='fade'>
+               </div> -->
+             <!--   <div class="container">
                   <header id='header0' class='mainHeader'>
                      <h2 id='header-1' style='letter-spacing:2px; font-size:3em; color:azure;z-index:99;font-weight:900; background: rgba(0, 0, 0, 0.4)'>Welcome to the  Botelho Lab! </h2>
                      <h5 class='otherSlides' id='header-2'>  <strong class='slideHeader'> Bacterial Fragmentation </strong> <br> Bacterial contents in fragmented phagosomes after 6 h of phagocytosis </h5>
@@ -80,7 +117,7 @@
                      <a id='circleThree'><span class="icon fa-circle-o"></span></a>
                      <a id='circleFour'><span class="icon fa-circle-o"></span></a>
                   </div>
-               </div>
+               </div> -->
                <!-- <h2 id='header1' style='font-size:0.8em; display:none; letter-spacing:2px; color:white;background-color: #00000087;'class="alt"> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,  </h2>
                   <h2  id='header2' style=' font-size:0.8em; display:none; letter-spacing:2px; color:white;background-color: #00000087;'class="alt"> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,  </h2>  -->
             </section>
@@ -999,7 +1036,7 @@
          <script src='js/portfolio.js'> </script>
          <script src='js/imageTab.js'></script>
          <script src='js/responsive.js'></script>
-         <script src='js/slideShow.js'></script>
+          <script src='js/slideShow.js'></script> 
          <script src="assets/js/jquery.scrolly.min.js"></script>
          <script src="assets/js/jquery.scrollzer.min.js"></script>
          <script src="assets/js/skel.min.js"></script>
