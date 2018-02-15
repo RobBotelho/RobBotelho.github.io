@@ -1669,6 +1669,9 @@
     .overlay{
         height:600px !important;
     }
+    #header-1{
+        margin-top:170px !important;
+    }
  }
  @media screen and (min-width: 961px) and (max-width: 1880px) {
     /* Basic */
