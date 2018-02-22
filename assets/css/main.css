@@ -1908,14 +1908,15 @@
          padding: 4em 0;
     }
     .otherSlides {
-        font-size:7px !important;
+        font-size: 15px !important;
+
     }
     .otherSlides2{
         font-size:7px !important;
         
     }
     .slideHeader{
-        font-size:10px !important;
+         font-size: 20px !important;
     }
     }
 }
