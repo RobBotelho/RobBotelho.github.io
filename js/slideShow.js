@@ -23,7 +23,7 @@ $(document).on('click','.fa-pause',function(){
     $(this).removeClass('fa-play');
    $(this).addClass('fa-pause');
    playing = 1;
-   timer();
+  //  timer();
   
 
  })
